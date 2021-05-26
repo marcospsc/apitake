@@ -38,7 +38,7 @@ module.exports = app => {
 
     controller.saveCustomerRepo = (req, res) => {
       customerRepoMock.data.push({
-        avatar: "req.body.avatar_url",
+        avatar: req.body.avatar_url,
         name: req.body.name,
         description: req.body.description,
         created_at: req.body.created_at,
