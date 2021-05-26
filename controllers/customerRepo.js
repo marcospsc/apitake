@@ -28,7 +28,7 @@ module.exports = app => {
       return (a.created_at > b.created_at) ? 1 : ((b.created_at > a.created_at) ? -1 : 0);
     });
 
-    //console.log(repos)
+    console.log(repos)
     return api_data
   }
 
@@ -38,7 +38,7 @@ module.exports = app => {
 
     controller.saveCustomerRepo = (req, res) => {
       customerRepoMock.data.push({
-        //avatar: "req.body.avatar_url",
+        avatar: "req.body.avatar_url",
         name: req.body.name,
         description: req.body.description,
         created_at: req.body.created_at,
